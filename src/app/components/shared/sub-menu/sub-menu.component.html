@@ -1,0 +1,22 @@
+<div class="nav-right nav-menu">
+  <a class="nav-item">
+    Bem Vindo(a) {{user}}
+  </a>
+  <a routerLink="/home" class="nav-item">
+    Home
+  </a>
+  <a routerLink="/cart" class="nav-item">
+    Carrinho ({{totalItems}})
+  </a>
+  <a class="nav-item">
+    Perfil
+  </a>
+  <span class="nav-item">
+    <a class="button is-primary is-inverted" (click)="logout()">
+      <span class="icon">
+        <i class="fa fa-power-off"></i>
+      </span>
+      <span>Sair</span>
+    </a>
+  </span>
+</div>
